@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing Api</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+   <section id="headerSection">
+       <!-- Creating Data Section Starts Here -->
+    <form id="form">
+        <h2>Create a Student Data</h2>
+        Name:<input type="text" name="name" id="name" placeholder="Enter Your Name" required>
+        ID:<input type="text" name="std_id" id="std_id" placeholder="Enter Your ID" required>
+        Email:<input type="email" name="email" id="email" placeholder="Enter Your Email" required>
+        Courses:<input type="text" name="courses" id="courses" placeholder="Enter Your Courses" required>
+        <button id="Submit">Submit</button>
+    </form>
+    <!-- Creating Data Section Ends Here -->
+
+    <br>
+
+    <!-- Deleting Data Section Starts Here -->
+    <form id="formDelete">
+        <h2>Delete a Student Data</h2>
+       Delete the Student:<input type="text" name="nameDelete" id="nameDelete" placeholder="Enter a Obj ID to Delete" required>
+       <button id="del">Delete</button>
+    </form>
+    <!-- Deleting Data Section Ends Here -->
+
+    <br>
+
+    <!-- Updating Data Section Starts Here -->
+    <form id="formUpdate">
+        <h2>Update a Student Data</h2>
+        ObjectID : <input type="text" name="objID" id="objID" placeholder="Enter the DB Object ID " required>
+        Name:<input type="text" name="name" id="name" placeholder="Enter Name" required>
+        ID:<input type="text" name="std_id" id="std_id" placeholder="Enter ID" required>
+        Email:<input type="email" name="email" id="email" placeholder="Enter  Email" required>
+        Courses:<input type="text" name="courses" id="courses" placeholder="Enter Courses" required>
+        <button id="Update">Update</button>
+    </form>
+   </section>
+    <!-- Updating Data Section Starts Here -->
+
+    <br> 
+
+    <!-- Getting Data Section Starts Here -->
+   <section class="viewSection">
+        <h2>View Student Data</h2>
+        <button id="view">View</button>
+        <table id="viewTable">
+            <tr>
+                <th>Name</th>
+                <th>ID</th>
+                <th>Email</th>
+                <th>Delete</th>
+            </tr>
+        </table>
+   </section>
+    <!-- Getting Data Section Ends Here -->
+<script src="/app.js" defer></script>
+</body>
+</html>
